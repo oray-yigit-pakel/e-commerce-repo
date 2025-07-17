@@ -3,7 +3,7 @@ import "./index.css";
 import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import HomePage from "./pages/HomePage"; // veya üstte tanımla
 import MobileHomeHeader from "./components/mobilHomeHeader";
-import Footer from "./components/footer";
+import MobileFooter from "./components/mobileFooter";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         {/* Diğer rotalar buraya eklenebilir */}
       </Switch>
-      <Footer/>
+      <MobileFooter />
     </>
   );
 }
